@@ -1,2 +1,4 @@
 # edit-distance
-a program that measures the edit distance between two strings - course project from Harvard's CS50 Introduction to Computer Science
+
+This program measures the "edit distance" between two strings, that is, the minimal number of additions, deletions, and/or edits necessary to transform one string into the other.
+
