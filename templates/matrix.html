@@ -1,0 +1,42 @@
+<table class="table table-sm">
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            {% for ch in s2 %}
+                <td>
+                    {{ ch }}
+                </td>
+            {% endfor %}
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            {% for j in range(s2|length + 1) %}
+                <td>
+                    {{ j }}
+                </td>
+            {% endfor %}
+        </tr>
+            {% for i in range(s1|length + 1) %}
+                <tr>
+                    {% if i == 0 %}
+                        <td></td>
+                    {% else %}
+                        <td>
+                            {{ s1[i - 1] }}
+                        </td>
+                    {% endif %}
+                        <td>
+                            {{ i }}
+                        </td>
+                    {% for j in range(s2|length + 1) %}
+                        <td>
+                            {{ matrix[i][j][0] }}
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+    </tbody>
+</table>
